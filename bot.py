@@ -42,7 +42,35 @@ texts = {
             ["Accounts will get verified. Payment will be done via Cryptobot receipt within 24 hours.", None],
             ["Congratulations.", None],
             ["Contact support!", None],
-        ]
+        ],
+        "buttons": {
+            "start": ["English", "Русский", "Polski", "Português"],
+            "navigation": {
+                "show_steps": "Show the steps",
+                "back_to_language_selection": "Back to language selection",
+                "let's_go": "Let's go",
+                "next_step": "Next step",
+                "to_3rd_step": "Let's go to the 3rd step",
+                "to_final_step": "To the final step",
+                "approve_account": "Approve account",
+                "no": "No",
+                "screenshots_issue": "Screenshot doesn't look alike",
+                "restriction_problem": "Restriction problem",
+                "all_good": "All good",
+                "proceed": "Proceed",
+                "create": "Create",
+                "received_payment": "Received Payment",
+                "not_received_payment": "Not received Payment",
+                "support": "Contact support",
+                "back": "Back",
+                "submit_screenshots": "Submit Screenshots"
+            },
+            "intermediate": {
+                "please_upload_screenshots": "Please upload 3 screenshots before proceeding.",
+                "all_screenshots_uploaded": "All screenshots uploaded! Click 'Submit Screenshots' to proceed.",
+                "contact_support_prompt": "Define your problem below or click the button to contact support:"
+            }
+        }
     },
     "ru": {
         "steps": [
@@ -60,7 +88,34 @@ texts = {
             ["Аккаунты будут проверены. Оплата будет произведена через Cryptobot в течение 24 часов.", None],
             ["Поздравляем.", None],
             ["Связаться с поддержкой!", None],
-        ]
+        ],
+        "buttons": {
+            "navigation": {
+                "show_steps": "Показать шаги",  # Russian
+                "back_to_language_selection": "Назад к выбору языка",  # Russian
+                "let's_go": "Начнем",  # Russian
+                "next_step": "Следующий шаг",  # Russian
+                "to_3rd_step": "Перейти к третьему шагу",  # Russian
+                "to_final_step": "К последнему шагу",  # Russian
+                "approve_account": "Одобрить аккаунт",  # Russian
+                "no": "Нет",  # Russian
+                "screenshots_issue": "Скриншоты не соответствуют",  # Russian
+                "restriction_problem": "Проблема с ограничениями",  # Russian
+                "all_good": "Все в порядке",  # Russian
+                "proceed": "Продолжить",  # Russian
+                "create": "Создать",  # Russian
+                "received_payment": "Платеж получен",  # Russian
+                "not_received_payment": "Платеж не получен",  # Russian
+                "support": "Связаться с поддержкой",  # Russian
+                "back": "Назад",  # Russian
+                "submit_screenshots": "Отправить скриншоты"  # Russian
+            },
+            "intermediate": {
+                "please_upload_screenshots": "Пожалуйста, загрузите 3 скриншота перед продолжением.",  # Russian
+                "all_screenshots_uploaded": "Все скриншоты загружены! Нажмите 'Отправить скриншоты', чтобы продолжить.",  # Russian
+                "contact_support_prompt": "Опишите вашу проблему ниже или нажмите кнопку, чтобы связаться с поддержкой."  # Russian
+            },
+        }
     },
     "pt": {
         "steps": [
@@ -78,7 +133,34 @@ texts = {
             ["As contas serão verificadas. O pagamento será feito por recibo do Cryptobot em 24 horas.", None],
             ["Parabéns.", None],
             ["Entre em contato com o suporte!", None],
-        ]
+        ],
+        "buttons": {
+            "navigation": {
+                "show_steps": "Mostrar os passos",  # Portuguese
+                "back_to_language_selection": "Voltar à seleção de idioma",  # Portuguese
+                "let's_go": "Vamos lá",  # Portuguese
+                "next_step": "Próximo passo",  # Portuguese
+                "to_3rd_step": "Ir para o 3º passo",  # Portuguese
+                "to_final_step": "Para o passo final",  # Portuguese
+                "approve_account": "Aprovar conta",  # Portuguese
+                "no": "Não",  # Portuguese
+                "screenshots_issue": "A captura de tela não é semelhante",  # Portuguese
+                "restriction_problem": "Problema de restrição",  # Portuguese
+                "all_good": "Tudo certo",  # Portuguese
+                "proceed": "Continuar",  # Portuguese
+                "create": "Criar",  # Portuguese
+                "received_payment": "Pagamento recebido",  # Portuguese
+                "not_received_payment": "Pagamento não recebido",  # Portuguese
+                "support": "Contato com suporte",  # Portuguese
+                "back": "Voltar",  # Portuguese
+                "submit_screenshots": "Enviar capturas de tela"  # Portuguese
+            },
+            "intermediate": {
+                "please_upload_screenshots": "Por favor, envie 3 capturas de tela antes de continuar.",  # Portuguese
+                "all_screenshots_uploaded": "Todas as capturas de tela foram enviadas! Clique em 'Enviar capturas de tela' para continuar.",  # Portuguese
+                "contact_support_prompt": "Descreva seu problema abaixo ou clique no botão para entrar em contato com o suporte."  # Portuguese
+            }
+        }
     },
     "pl": {
         "steps": [
@@ -96,34 +178,62 @@ texts = {
             ["Konta zostaną zweryfikowane. Płatność zostanie dokonana przez Cryptobot w ciągu 24 godzin.", None],
             ["Gratulacje.", None],
             ["Skontaktuj się z pomocą techniczną!", None],
-        ]
+        ],
+        "buttons": {
+            "navigation": {
+                "show_steps": "Pokaż kroki",  # Polish
+                "back_to_language_selection": "Wróć do wyboru języka",  # Polish
+                "let's_go": "Zaczynajmy",  # Polish
+                "next_step": "Następny krok",  # Polish
+                "to_3rd_step": "Przejdź do 3. kroku",  # Polish
+                "to_final_step": "Do ostatniego kroku",  # Polish
+                "approve_account": "Zatwierdź konto",  # Polish
+                "no": "Nie",  # Polish
+                "screenshots_issue": "Zrzut ekranu nie pasuje",  # Polish
+                "restriction_problem": "Problem z ograniczeniami",  # Polish
+                "all_good": "Wszystko w porządku",  # Polish
+                "proceed": "Kontynuuj",  # Polish
+                "create": "Utwórz",  # Polish
+                "received_payment": "Płatność otrzymana",  # Polish
+                "not_received_payment": "Płatność nie została otrzymana",  # Polish
+                "support": "Skontaktuj się z pomocą",  # Polish
+                "back": "Wróć",  # Polish
+                "submit_screenshots": "Prześlij zrzuty ekranu"  # Polish
+            },
+            "intermediate": {
+                "please_upload_screenshots": "Proszę prześlij 3 zrzuty ekranu przed kontynuowaniem.",  # Polish
+                "all_screenshots_uploaded": "Wszystkie zrzuty ekranu zostały przesłane! Kliknij 'Prześlij zrzuty ekranu', aby kontynuować.",  # Polish
+                "contact_support_prompt": "Opisz swój problem poniżej lub kliknij przycisk, aby skontaktować się z pomocą techniczną."  # Polish
+            },
+        }
     }
 }
 
 # Track user data
 user_data = {}
 
-# Generate buttons dynamically
 def step_buttons(lang, step):
     keyboard = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+    translations = texts[lang]["buttons"]["navigation"]
     buttons = {
-        0: [("Show the steps", "step_1"), ("Back to language selection", "language_selection")],
-        1: [("Let's go", "step_2"), ("Back", "step_0")],
-        2: [("Next step", "step_3"), ("Back", "step_1")],
-        3: [("Let's go to the 3rd step", "step_4"), ("Back", "step_2")],
-        4: [("To the final step", "step_5"), ("Back", "step_3")],
-        5: [("Approve account", "step_6"), ("Back", "step_4")],
-        6: [("No", "step_7"), ("Screenshot doesn't look alike", "step_8"), ("Back", "step_5")],
-        7: [("Submit Screenshots", "submit_screenshots"), ("Back", "step_6")],
-        8: [("Support", "redirect to support"), ("Restriction problem", "step_9"), ("Back", "step_6")],
-        9: [("All good", "step_7"), ("Back", "step_8"), ("Support", "redirect to support")],
-        10: [("Proceed", "step_11"), ("Create", "step_7")],
-        11: [("Received Payment", "step_12"), ("Not received Payment", "step_13")],
-        13: [("Support", "redirect to support")],
+        0: [(translations["show_steps"], "step_1"), (translations["back_to_language_selection"], "language_selection")],
+        1: [(translations["let's_go"], "step_2"), (translations["back"], "step_0")],
+        2: [(translations["next_step"], "step_3"), (translations["back"], "step_1")],
+        3: [(translations["to_3rd_step"], "step_4"), (translations["back"], "step_2")],
+        4: [(translations["to_final_step"], "step_5"), (translations["back"], "step_3")],
+        5: [(translations["approve_account"], "step_6"), (translations["back"], "step_4")],
+        6: [(translations["no"], "step_7"), (translations["screenshots_issue"], "step_8"), (translations["back"], "step_5")],
+        7: [(translations["submit_screenshots"], "submit_screenshots"), (translations["back"], "step_6")],
+        8: [(translations["support"], "redirect_to_support"), (translations["restriction_problem"], "step_9"), (translations["back"], "step_6")],
+        9: [(translations["all_good"], "step_7"), (translations["back"], "step_8"), (translations["support"], "redirect_to_support")],
+        10: [(translations["proceed"], "step_11"), (translations["create"], "step_7")],
+        11: [(translations["received_payment"], "step_12"), (translations["not_received_payment"], "step_13")],
+        13: [(translations["support"], "redirect_to_support")],
     }
     for text, callback in buttons.get(step, []):
         keyboard.add(KeyboardButton(text))
     return keyboard
+
 
 # Start command
 @bot.message_handler(commands=['start'])
@@ -147,14 +257,28 @@ def start(message):
     )
 
 # Handle language selection
-@bot.message_handler(func=lambda message: message.text in ["English", "Русский"])
+@bot.message_handler(func=lambda message: message.text in ["English", "Русский", "Polski", "Português"])
 def set_language(message):
-    lang = "en" if message.text == "English" else "ru"
-    user_data[message.from_user.id] = {"lang": lang, "step": 0, "screenshots": []}
+    # Map user input to language codes
+    language_map = {
+        "English": "en",
+        "Русский": "ru",
+        "Polski": "pl",
+        "Português": "pt"
+    }
+    
+    # Get the selected language code
+    selected_language = language_map.get(message.text, "en")  # Default to English
+    user_id = message.from_user.id
+    
+    # Initialize user data with the selected language
+    user_data[user_id] = {"lang": selected_language, "step": 0, "screenshots": []}
+    
+    # Send first step in the selected language
     bot.send_message(
         message.chat.id,
-        texts[lang]["steps"][0][0],
-        reply_markup=step_buttons(lang, 0)
+        texts[selected_language]["steps"][0][0],  # First step text
+        reply_markup=step_buttons(selected_language, 0)
     )
 # Handle navigation and media display
 # Handle navigation and media display
@@ -169,57 +293,50 @@ def navigate_steps(message):
     lang = user_data[user_id]["lang"]
     step = user_data[user_id]["step"]
 
+    # Define navigation steps
+    next_steps = {
+        texts[lang]["buttons"]["navigation"]["show_steps"]: 1,
+        texts[lang]["buttons"]["navigation"]["let's_go"]: 2,
+        texts[lang]["buttons"]["navigation"]["next_step"]: 3,
+        texts[lang]["buttons"]["navigation"]["to_3rd_step"]: 4,
+        texts[lang]["buttons"]["navigation"]["to_final_step"]: 5,
+        texts[lang]["buttons"]["navigation"]["approve_account"]: 6,
+        texts[lang]["buttons"]["navigation"]["no"]: 7,
+        texts[lang]["buttons"]["navigation"]["screenshots_issue"]: 8,
+        texts[lang]["buttons"]["navigation"]["restriction_problem"]: 9,
+        texts[lang]["buttons"]["navigation"]["all_good"]: 10,
+        texts[lang]["buttons"]["navigation"]["proceed"]: step + 1,
+        texts[lang]["buttons"]["navigation"]["create"]: 7,
+        texts[lang]["buttons"]["navigation"]["received_payment"]: 12,
+        texts[lang]["buttons"]["navigation"]["not_received_payment"]: 13,
+        texts[lang]["buttons"]["navigation"]["back"]: step - 1,
+    }
+
     # Handle special cases
-    if message.text == "Back to language selection":
+    if message.text == texts[lang]["buttons"]["navigation"]["back_to_language_selection"]:
         start(message)
         return
-    if message.text == "Submit Screenshots":
+    if message.text == texts[lang]["buttons"]["navigation"]["submit_screenshots"]:
         if len(user_data[user_id]["screenshots"]) < 3:
-            bot.send_message(message.chat.id, "Please upload 3 screenshots before proceeding.")
+            bot.send_message(message.chat.id, texts[lang]["buttons"]["intermediate"]["please_upload_screenshots"])
             return
         # Transition to step 10
         user_data[user_id]["step"] = 10
         step = 10
-    if message.text == "Create":
-        # Reset screenshots for a new account
-        user_data[user_id]["screenshots"] = []
-        bot.send_message(message.chat.id, "You chose to create a new account. Please upload 3 new screenshots.")
-        step = 7
-    if message.text == "Support":
+    if message.text == texts[lang]["buttons"]["navigation"]["support"]:
         # Inline button for support
         markup = InlineKeyboardMarkup()
         support_button = InlineKeyboardButton(
-            text="Contact Support",
+            text=texts[lang]["buttons"]["navigation"]["support"],
             url="https://t.me/Losand"  # Replace with your desired Telegram support link
         )
         markup.add(support_button)
-
         bot.send_message(
             message.chat.id,
-            "Define your problem below or click the button to contact support:",
+            texts[lang]["buttons"]["intermediate"]["contact_support_prompt"],
             reply_markup=markup
         )
         return
-
-    # Navigation mapping
-    next_steps = {
-        "Show the steps": 1,
-        "Let's go": 2,
-        "Next step": 3,
-        "Let's go to the 3rd step": 4,
-        "To the final step": 5,
-        "Approve account": 6,
-        "No": 7,
-        "Screenshot doesn't look alike": 8,
-        "Restriction problem": 9,
-        "All good": 7,
-        "Proceed": step + 1,
-        "Create": 7,
-        "Received Payment": 12,
-        "Not received Payment": 13,
-        "Restart": 0,
-        "Back": step - 1,
-    }
 
     # Determine the next step
     new_step = next_steps.get(message.text, step)
@@ -242,14 +359,18 @@ def handle_screenshot(message):
     if user_id not in user_data:
         bot.send_message(message.chat.id, "Please use /start to begin.")
         return
+
+    lang = user_data[user_id]["lang"]
     step = user_data[user_id]["step"]
     if step == 7:  # Screenshot step
         user_data[user_id]["screenshots"].append(message.photo[-1].file_id)
         uploaded_count = len(user_data[user_id]["screenshots"])
         bot.send_message(message.chat.id, f"Screenshot {uploaded_count}/3 uploaded.")
         if uploaded_count == 3:
-            bot.send_message(message.chat.id, "All screenshots uploaded! Click 'Submit Screenshots' to proceed.")
-# Run the bot
+            bot.send_message(
+                message.chat.id,
+                texts[lang]["buttons"]["intermediate"]["all_screenshots_uploaded"]
+            )
 if __name__ == "__main__":
     bot.infinity_polling()
 
