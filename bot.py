@@ -1,6 +1,7 @@
 import logging
 import telebot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
+from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import os
 from dotenv import load_dotenv
 from datetime import datetime
@@ -36,11 +37,65 @@ texts = {
             ["Did you encounter any problems during the registration process?", {"media": "./media/example_image.jpg"}],
             ["Step 5: Take 3 screenshots as instructed and upload them.", None],
             ["What problem have you faced?", None],
-            ["Solution regarding 'restrictions' field.", None],
+            ["Solution regarding 'restrictions' field.", {"media": "./media/example_image.jpg"}],
             ["Good. Do you wish to create more accounts or proceed with existing ones?", None],
             ["Accounts will get verified. Payment will be done via Cryptobot receipt within 24 hours.", None],
-            ["Congratulations. Everything is good. Would you like to restart the process?", None],
-            ["Please contact support here: @Losand", None],
+            ["Congratulations.", None],
+            ["Contact support!", None],
+        ]
+    },
+    "ru": {
+        "steps": [
+            ["Привет! Я ваш личный помощник в процессе регистрации. Пройдите несколько простых шагов и получите до 15 USDT на свой кошелек Telegram в течение 24 часов!", None],
+            ["Рекомендую заранее установить приложения Outlook и Alipay на телефон перед выполнением шагов, которые приблизят вас к вознаграждению:\n- Создайте два email-адреса (Outlook)\n- Зарегистрируйтесь на платформе\n- Пройдите верификацию\n- Отправьте скриншоты боту для подтверждения регистрации.", None],
+            ["Шаг 1: Откройте приложение Outlook и создайте 2 email-адреса. Убедитесь, что пароль содержит хотя бы одну цифру, и выберите ваш регион!", None],
+            ["Шаг 2: Скачайте и войдите в приложение Alipay.", None],
+            ["Время зарегистрировать аккаунт. Убедитесь, что пароль от электронной почты совпадает с паролем Alipay!", {"media": "./media/example_image.jpg"}],
+            ["Шаг 4: Сделайте качественные фото паспорта с хорошим освещением для прохождения верификации!", {"media": "./media/example_image.jpg"}],
+            ["Возникли ли у вас проблемы с процессом регистрации?", {"media": "./media/example_image.jpg"}],
+            ["Шаг 5: Сделайте 3 скриншота по инструкции и загрузите их.", None],
+            ["С какой проблемой вы столкнулись?", None],
+            ["Решение по полю 'ограничения'.", {"media": "./media/example_image.jpg"}],
+            ["Все хорошо. Хотите создать больше аккаунтов или продолжить с существующими?", None],
+            ["Аккаунты будут проверены. Оплата будет произведена через Cryptobot в течение 24 часов.", None],
+            ["Поздравляем.", None],
+            ["Связаться с поддержкой!", None],
+        ]
+    },
+    "pt": {
+        "steps": [
+            ["Oi! Sou seu assistente pessoal durante todo o processo de registro. Conclua alguns passos simples e receba até 15 USDT na sua carteira Telegram em 24 horas!", None],
+            ["Sugiro que você prepare e instale os aplicativos Outlook e Alipay no seu telefone antes de começar a seguir os passos para se aproximar da recompensa:\n- Crie dois e-mails (Outlook)\n- Cadastre-se na plataforma\n- Complete a verificação\n- Envie capturas de tela para o bot para confirmar seu registro.", None],
+            ["Passo 1: Acesse o aplicativo Outlook e crie 2 e-mails. Certifique-se de que a senha tenha pelo menos um número e que a região corresponda à sua região!", None],
+            ["Passo 2: Baixe e faça login no aplicativo Alipay.", None],
+            ["É hora de criar uma conta. Certifique-se de que a senha do seu e-mail corresponda à senha da conta do Alipay!", {"media": "./media/example_image.jpg"}],
+            ["Passo 4: Tire fotos do passaporte com boa qualidade e boa iluminação para a verificação facial!", {"media": "./media/example_image.jpg"}],
+            ["Você encontrou algum problema durante o processo de registro?", {"media": "./media/example_image.jpg"}],
+            ["Passo 5: Tire 3 capturas de tela conforme as instruções e envie-as.", None],
+            ["Qual problema você enfrentou?", None],
+            ["Solução para o campo 'restrições'.", {"media": "./media/example_image.jpg"}],
+            ["Tudo bem. Deseja criar mais contas ou prosseguir com as existentes?", None],
+            ["As contas serão verificadas. O pagamento será feito por recibo do Cryptobot em 24 horas.", None],
+            ["Parabéns.", None],
+            ["Entre em contato com o suporte!", None],
+        ]
+    },
+    "pl": {
+        "steps": [
+            ["Cześć! Jestem twoim osobistym asystentem podczas całego procesu rejestracji. Wykonaj kilka prostych kroków i odbierz do 15 USDT w ciągu 24 godzin na swój portfel Telegram!", None],
+            ["Sugeruję przygotowanie się i zainstalowanie aplikacji Outlook oraz Alipay na telefonie przed rozpoczęciem kroków, które przybliżą cię do nagrody:\n- Załóż dwa e-maile (Outlook)\n- Zarejestruj się na platformie\n- Ukończ weryfikację\n- Wyślij zrzuty ekranu do bota, aby potwierdzić rejestrację.", None],
+            ["Krok 1: Otwórz aplikację Outlook i utwórz 2 e-maile. Upewnij się, że hasło zawiera co najmniej jedną cyfrę, a region odpowiada twojemu regionowi!", None],
+            ["Krok 2: Pobierz i zaloguj się do aplikacji Alipay.", None],
+            ["Czas na założenie konta. Upewnij się, że hasło e-mail pasuje do hasła konta Alipay!", {"media": "./media/example_image.jpg"}],
+            ["Krok 4: Zrób wysokiej jakości zdjęcia paszportowe i zadbaj o dobre oświetlenie do weryfikacji twarzy!", {"media": "./media/example_image.jpg"}],
+            ["Czy napotkałeś jakieś problemy podczas procesu rejestracji?", {"media": "./media/example_image.jpg"}],
+            ["Krok 5: Wykonaj 3 zrzuty ekranu zgodnie z instrukcją i prześlij je.", None],
+            ["Jaki problem napotkałeś?", None],
+            ["Rozwiązanie problemu z polem 'ograniczenia'.", {"media": "./media/example_image.jpg"}],
+            ["Dobrze. Czy chcesz założyć więcej kont, czy kontynuować z istniejącymi?", None],
+            ["Konta zostaną zweryfikowane. Płatność zostanie dokonana przez Cryptobot w ciągu 24 godzin.", None],
+            ["Gratulacje.", None],
+            ["Skontaktuj się z pomocą techniczną!", None],
         ]
     }
 }
@@ -60,12 +115,11 @@ def step_buttons(lang, step):
         5: [("Approve account", "step_6"), ("Back", "step_4")],
         6: [("No", "step_7"), ("Screenshot doesn't look alike", "step_8"), ("Back", "step_5")],
         7: [("Submit Screenshots", "submit_screenshots"), ("Back", "step_6")],
-        8: [("Support", "redirect_to_support"), ("Restriction problem", "step_9"), ("Back", "step_6")],
-        9: [("All good", "step_7"), ("Back", "step_8"), ("Support", "redirect_to_support")],
+        8: [("Support", "redirect to support"), ("Restriction problem", "step_9"), ("Back", "step_6")],
+        9: [("All good", "step_7"), ("Back", "step_8"), ("Support", "redirect to support")],
         10: [("Proceed", "step_11"), ("Create", "step_7")],
         11: [("Received Payment", "step_12"), ("Not received Payment", "step_13")],
-        12: [("Restart", "language_selection")],
-        13: [("Support", "redirect_to_support")],
+        13: [("Support", "redirect to support")],
     }
     for text, callback in buttons.get(step, []):
         keyboard.add(KeyboardButton(text))
@@ -102,8 +156,9 @@ def set_language(message):
         texts[lang]["steps"][0][0],
         reply_markup=step_buttons(lang, 0)
     )
-
 # Handle navigation and media display
+# Handle navigation and media display
+# Navigation logic
 @bot.message_handler(func=lambda message: True)
 def navigate_steps(message):
     user_id = message.from_user.id
@@ -130,16 +185,23 @@ def navigate_steps(message):
         user_data[user_id]["screenshots"] = []
         bot.send_message(message.chat.id, "You chose to create a new account. Please upload 3 new screenshots.")
         step = 7
-    if message.text == "redirect_to_support":
-        # Create an inline keyboard with a URL button
+    if message.text == "Support":
+        # Inline button for support
         markup = InlineKeyboardMarkup()
         support_button = InlineKeyboardButton(
             text="Contact Support",
-            url="https://t.me/Losand"  # Replace with your desired support link
+            url="https://t.me/Losand"  # Replace with your desired Telegram support link
         )
         markup.add(support_button)
 
-    # Step navigation logic
+        bot.send_message(
+            message.chat.id,
+            "Define your problem below or click the button to contact support:",
+            reply_markup=markup
+        )
+        return
+
+    # Navigation mapping
     next_steps = {
         "Show the steps": 1,
         "Let's go": 2,
@@ -149,10 +211,8 @@ def navigate_steps(message):
         "Approve account": 6,
         "No": 7,
         "Screenshot doesn't look alike": 8,
-        "Support": 8,
         "Restriction problem": 9,
-        "All good": 10,
-        "Next": 10,
+        "All good": 7,
         "Proceed": step + 1,
         "Create": 7,
         "Received Payment": 12,
@@ -169,14 +229,13 @@ def navigate_steps(message):
     text, media = texts[lang]["steps"][new_step]
     keyboard = step_buttons(lang, new_step)
 
-    # Send the appropriate response (with media or plain text)
+    # Send the appropriate response
     if media and "media" in media:
         with open(media["media"], "rb") as img:
             bot.send_photo(message.chat.id, img, caption=text, reply_markup=keyboard)
     else:
         bot.send_message(message.chat.id, text, reply_markup=keyboard)
 
-# Handle file uploads (screenshots)
 @bot.message_handler(content_types=['photo'])
 def handle_screenshot(message):
     user_id = message.from_user.id
@@ -190,11 +249,9 @@ def handle_screenshot(message):
         bot.send_message(message.chat.id, f"Screenshot {uploaded_count}/3 uploaded.")
         if uploaded_count == 3:
             bot.send_message(message.chat.id, "All screenshots uploaded! Click 'Submit Screenshots' to proceed.")
-
 # Run the bot
 if __name__ == "__main__":
     bot.infinity_polling()
-
 
 
   #here you need to implement navigation like this:
