@@ -28,9 +28,9 @@ except Exception as e:
 texts = {
     "en": {
         "steps": [
-            ["Hi! I’m your personal assistant during the whole registration process. Complete a few simple steps and get up to 15 USDT reward in 24 hours on your telegram wallet!", None],
+            ["Hi! I’m your personal assistant during the whole registration process. Complete a few simple steps and get up to 15 USDT reward in 24 hours on your telegram wallet! ", None],
             ["I suggest you to make some preps and install Outlook and Alipay apps on your phone before starting to follow the steps that will bring you closer to the reward:\n- Make two emails (Outlook)\n- Register on the platform\n- Complete verification\n- Send screenshots to the bot to confirm your registration.", None],
-            ["Step 1: Go to the Outlook application and create 2 emails. Ensure the password has at least one digit, and the region matches your region!", None],
+            ["Step 1: Go to outlook application and create 2 mails in it. ‼ Attention‼ The password for the mail must contain at least one digit. The region of the mail must match your region!", None],
             ["Step 2: Download and log into the Alipay app.", None],
             ["It's time to sign up for an account. Ensure your email password matches your Alipay account password!", {"media": "./media/example_image.jpg"}],
             ["Step 4: Take good-quality passport photos and ensure proper lighting for facial verification!", {"media": "./media/example_image.jpg"}],
